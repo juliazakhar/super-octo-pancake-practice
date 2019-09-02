@@ -1,0 +1,33 @@
+const army = 'the white walkers';
+
+console.log (army);
+
+const stark = 'Arya';
+
+// BEGIN
+
+// END
+
+console.log(`Do you want to eat, ${stark}?`);
+
+const name = 'Naharis';
+
+// BEGIN
+
+// END
+
+console.log(name[4]);
+
+let name = 'Bubble';
+
+console.log(name[7]); //looking for undefined
+
+const one = 'Naharis';
+const two = 'Mormont';
+const three = 'Sand';
+
+// BEGIN
+
+// END
+
+console.log(`${one[2]}${two[1]}${three[3]}${two[4]}${two[2]}`);
