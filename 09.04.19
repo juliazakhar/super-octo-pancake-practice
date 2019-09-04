@@ -1,0 +1,41 @@
+const { getParentFor } = require('hexlet/got');
+
+// BEGIN
+
+const mothersName = getParentFor('Joffrey Baratheon');
+const grandFathersName = getParentFor(mothersName, 'father');
+
+// END
+
+console.log(grandFathersName);
+//hexlet practice, won't work
+
+
+const { toUpperCase } = require('hexlet/string');
+
+const text = 'knock!';
+
+// BEGIN
+
+// END
+
+console.log(toUpperCase(text));
+//hexlet practice, won't work
+
+
+const motto = 'Family, Duty, Honor';
+
+// BEGIN
+
+// END
+
+console.log(typeof motto);
+
+
+const text = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+
+// BEGIN
+
+// END
+
+console.log(text.length);
