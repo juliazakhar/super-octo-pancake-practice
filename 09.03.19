@@ -1,0 +1,36 @@
+Math.pow(2, 3);
+
+const soldiersCount = -2309;
+
+// BEGIN
+
+// END
+
+console.log(Math.abs(soldiersCount));
+
+const number = 923.2238;
+
+// BEGIN
+
+// END
+
+console.log(Math.ceil(number));
+
+const result = Math.min(3, 10, 22, -3, 0);
+
+console.log(result);
+
+
+
+const { calculateDistance } = require('hexlet/got');
+
+// BEGIN
+
+// END
+
+const journeyOne = calculateDistance('Winterfell', 'The Twins');
+const journeyTwo = calculateDistance('The Twins', 'The Eyrie');
+
+console.log(journeyOne + journeyTwo);
+//just an example of code, won't work outside hexlet
+
