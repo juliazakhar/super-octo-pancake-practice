@@ -39,3 +39,26 @@ const text = 'a mind needs books as a sword needs a whetstone, if it is to keep 
 // END
 
 console.log(text.length);
+
+
+const text = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
+
+// BEGIN
+
+const lowerText = text.toLowerCase();
+
+// END
+
+console.log(lowerText);
+
+
+let firstName = '  Grigor   \n';
+firstName = firstName.trim();//deletes unnecessary spaces
+
+// BEGIN
+
+// END
+
+console.log(firstName);
+
+
