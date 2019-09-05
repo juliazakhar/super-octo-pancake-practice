@@ -1,64 +1,33 @@
 const { getParentFor } = require('hexlet/got');
-
-// BEGIN
-
 const mothersName = getParentFor('Joffrey Baratheon');
 const grandFathersName = getParentFor(mothersName, 'father');
-
-// END
-
-console.log(grandFathersName);
+onsole.log(grandFathersName);
 //hexlet practice, won't work
 
 
 const { toUpperCase } = require('hexlet/string');
-
 const text = 'knock!';
-
-// BEGIN
-
-// END
-
 console.log(toUpperCase(text));
 //hexlet practice, won't work
 
 
 const motto = 'Family, Duty, Honor';
-
-// BEGIN
-
-// END
-
 console.log(typeof motto);
 
 
 const text = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
-
-// BEGIN
-
-// END
-
 console.log(text.length);
 
-
 const text = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
-
-// BEGIN
-
 const lowerText = text.toLowerCase();
-
-// END
-
 console.log(lowerText);
-
 
 let firstName = '  Grigor   \n';
 firstName = firstName.trim();//deletes unnecessary spaces
-
-// BEGIN
-
-// END
-
 console.log(firstName);
 
+const text = 'Never forget what you are, for surely the world will not';
+const firstLetter = text.charAt(0);
+const lastLetter = text.charAt(text.length - 1);
+console.log('First: ' + firstLetter + '\n' + 'Last: ' + lastLetter);
 
