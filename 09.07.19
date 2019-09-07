@@ -1,0 +1,26 @@
+const printMotto = () => {
+  const text = 'Winter is coming';
+  console.log(text);
+};
+module.exports = printMotto;//this works on hexlet but not on repl.it
+printMotto();//for some reason this works on repl.it but doesn't work on hexlet
+
+const printJaimesLine = (someText) => {
+  console.log(`JAIME: ${someText}`);
+};
+const lines = 'some text';
+module.exports = printJaimesLine; //works on hexlet, because they have the function
+printJaimesLine(lines); //works on repl.it
+
+const printSeq = (route, number) => {
+  console.log(route.repeat(number));
+}
+module.exports = printSeq; //same
+printSeq('=-', '7'); //same
+
+const { getParentFor } = require('hexlet/got');
+const getParentNamesTotalLength = (childsName) => {
+  return getParentFor(childsName, 'mother').length + getParentFor(childsName, 'father').length;
+};
+module.exports = getParentNamesTotalLength;
+//works exclusively on hexlet
