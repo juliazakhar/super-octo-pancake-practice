@@ -24,3 +24,11 @@ const getParentNamesTotalLength = (childsName) => {
 };
 module.exports = getParentNamesTotalLength;
 //works exclusively on hexlet
+
+const { getParentFor } = require('hexlet/got');
+// BEGIN
+const getCustomParentFor = (child, parent = 'father') => {
+  return getParentFor(child, 'father');
+};
+// END
+module.exports = getCustomParentFor; //strange function inside of another function?
