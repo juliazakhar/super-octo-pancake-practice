@@ -1,0 +1,5 @@
+const getHiddenCard = (hiddenCardNumber, num = 4) => {
+return hiddenCardNumber.slice(12).padStart(4 + num, '*');
+};
+module.exports = getHiddenCard; //i don't fully understand
+
