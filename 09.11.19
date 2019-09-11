@@ -1,0 +1,7 @@
+const isLannisterSoldier = (armor, shield) => (armor === 'red' && shield === null) || shield === 'lion';
+module.exports = isLannisterSoldier;//to check if a soldier is Lannister
+
+const isLannisterSoldier = require('./isLannisterSoldier');
+const isNotLannisterSoldier = (color, shield) => !isLannisterSoldier(color, shield);
+module.exports = isNotLannisterSoldier;
+
