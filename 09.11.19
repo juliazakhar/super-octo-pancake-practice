@@ -5,3 +5,6 @@ const isLannisterSoldier = require('./isLannisterSoldier');
 const isNotLannisterSoldier = (color, shield) => !isLannisterSoldier(color, shield);
 module.exports = isNotLannisterSoldier;
 
+const isNeutralSoldier = (armor, shield) => (armor !== 'red' && shield !== 'red') || 
+(armor === 'yellow' && shield !== 'yellow') || (armor === 'black' && shield === 'black');
+module.exports = isNeutralSoldier;
