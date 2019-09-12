@@ -1,0 +1,51 @@
+const getTypeOfSentence = (sentence) => {
+  const lastChar = sentence.substr(-1);
+  if (lastChar === '?') {
+    return 'question';
+  }
+
+  return 'normal';
+}
+
+getTypeOfSentence('Hodor'); // normal
+getTypeOfSentence('Hodor?'); // question
+
+
+
+const getSentenceTone = (sentence) => {
+    if (sentence === sentence.toUpperCase()){
+      return 'scream';
+    }
+    
+    return 'normal';
+}
+module.exports = getSentenceTone;
+
+
+
+const normalizeUrl = (link) => {
+  if (link.startsWith('http://')) {
+    return ('https://' + link.substr(7));
+  } else {
+    return ('https://' + link);
+  }
+}
+module.exports = normalizeUrl;
+
+
+
+const whoIsThisHouseToStarks = (lastName) => {
+
+  if (lastName === 'Karstark' || lastName === 'Tally') {
+      return 'friend';
+  } else if (lastName === 'Lannister' || lastName === 'Frey') {
+      return 'enemy';
+  } else {
+      return 'neutral';
+  }
+
+}
+module.exports = whoIsThisHouseToStarks;
+
+
+
